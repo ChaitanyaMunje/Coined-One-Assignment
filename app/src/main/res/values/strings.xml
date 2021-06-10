@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Coined One</string>
+    <string name="explore">Explore</string>
+    <string name="connect">Connect</string>
+    <string name="ask">Ask</string>
+    <string name="know">Know</string>
+    <string name="chat">Chat</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="heading">Heading</string>
+    <string name="question">Question</string>
+    <string name="the_big_picture">The Big Picture</string>
+    <string name="big_picture">Big Picture</string>
+    <string name="why_you_should_be_concerned">Why you should be concerned ?</string>
+    <string name="concerned">Concerned</string>
+    <string name="what_you_need_to_be_aware_of">What you need to be aware of</string>
+    <string name="awareness">Awareness</string>
+    <string name="what_you_can_do">What you can do ?</string>
+    <string name="can_do">Can Do</string>
+    <string name="sharefab">shareFAB</string>
+    <string name="shareFab">Share FAB</string>
+    <string name="share_my_solution">Share my solution</string>
+    <string name="time">Time</string>
+    <string name="slider_image">Slider Image</string>
+    <string name="tag">Tag</string>
+    <string name="query_url">https://cdn.contentful.com/spaces/oyl9jnz1wloz/environments/master/entries?access_token=k7rY6ZvuydrzmKmyv7s-7bcKoa498Q8dC4m4sAWAyxI&amp;content_type=question</string>
+</resources>

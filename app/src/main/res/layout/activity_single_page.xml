@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_shade_1"
+    tools:context=".SinglePageActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_above="@id/idBtnShareSol"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.smarteist.autoimageslider.SliderView
+                android:id="@+id/idSVSlider"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:sliderAnimationDuration="600"
+                app:sliderAutoCycleDirection="back_and_forth"
+                app:sliderIndicatorAnimationDuration="600"
+                app:sliderIndicatorEnabled="true"
+                app:sliderIndicatorGravity="center_horizontal|bottom"
+                app:sliderIndicatorMargin="15dp"
+                app:sliderIndicatorOrientation="horizontal"
+                app:sliderIndicatorPadding="3dp"
+                app:sliderIndicatorRadius="2dp"
+                app:sliderIndicatorSelectedColor="#5A5A5A"
+                app:sliderIndicatorUnselectedColor="#FFF"
+                app:sliderScrollTimeInSec="1" />
+
+
+            <TextView
+                android:id="@+id/idTVQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:padding="3dp"
+                android:text="@string/question"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/idTVBigPicHeading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:padding="3dp"
+                android:text="@string/the_big_picture"
+                android:textAllCaps="false"
+                android:textColor="@color/yellow"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/idTVBigPic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:padding="3dp"
+                android:text="@string/big_picture"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/idTVConcernedHeading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:padding="3dp"
+                android:text="@string/why_you_should_be_concerned"
+                android:textAllCaps="false"
+                android:textColor="@color/yellow"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/idTVConcerned"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:padding="3dp"
+                android:text="@string/concerned"
+                android:textColor="@color/white" />
+
+
+            <TextView
+                android:id="@+id/idTVAwarenessHeading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:padding="3dp"
+                android:text="@string/what_you_need_to_be_aware_of"
+                android:textAllCaps="false"
+                android:textColor="@color/yellow"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/idTVAwareness"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:padding="3dp"
+                android:text="@string/awareness"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/idTVCanDoHeading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:padding="3dp"
+                android:text="@string/what_you_can_do"
+                android:textAllCaps="false"
+                android:textColor="@color/yellow"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/idTVCanDo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:padding="3dp"
+                android:text="@string/can_do"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/idFABShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/idBtnShareSol"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:contentDescription="@string/shareFab"
+        android:src="@drawable/ic_share"
+        app:backgroundTint="@color/purple_200"
+        app:fabCustomSize="50dp"
+        app:tint="@color/white" />
+
+    <Button
+        android:id="@+id/idBtnShareSol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:padding="4dp"
+        android:text="@string/share_my_solution"
+        android:textAllCaps="false"
+        app:backgroundTint="@color/black_shade_3" />
+</RelativeLayout>

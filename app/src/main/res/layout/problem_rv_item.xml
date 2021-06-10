@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/idCVQuestion"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="7dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="3dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/idIVQuestion"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:scaleType="centerCrop"
+            android:src="@color/purple_200" />
+
+        <TextView
+            android:id="@+id/idTVQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="3dp"
+            android:layout_toEndOf="@id/idIVQuestion"
+            android:maxLines="2"
+            android:padding="3dp"
+            android:text="@string/heading"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/idTVTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVQuestion"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_toEndOf="@id/idIVQuestion"
+            android:text="@string/time"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            tools:ignore="SmallSp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/idRVTags"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVTime"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_toEndOf="@id/idIVQuestion"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/tags_rv_item" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
